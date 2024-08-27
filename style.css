@@ -57,8 +57,36 @@ header> nav{
     background-color: transparent;
 }
 
+.card{
+    background-color: #1c2053;
+    color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+.catagories .card:hover{
+    background-color: var(--secondary-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px;}
+.catagories .card img{
+    width: 100px;
+    display: block;
+    margin: 10px auto;
+}
 
+.p-courses-btn{
+    display: flex;
+    justify-content: space-between;
+}
 
+/* .carousel-control-float {
+    top: 10%;
+    opacity: 0.5;
+  }
+  .carousel-control-prev:hover, .carousel-control-next:hover {
+    top: 50%;
+    opacity: 1;
+  } */
+    
 
 
 
