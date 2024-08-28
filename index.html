@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!----Bootstrap Link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!----Swipper js link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!----Custom Css-->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +20,7 @@
     <!----Header section-->
     <header>
         <!----Navbar-->
-        <nav class="navbar navbar-expand-lg bg-body-tranparent position-fixed w-100">
+        <nav class="navbar navbar-expand-lg bg-body-tranparent">
             <div class="container-fluid">
                 <a class="navbar-brand ms-5 text-light logo" href="#"><span class="education">E</span>ducation</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -156,174 +160,145 @@
                 <h1>Courses You Can't Miss</h1>
             </div>
             <!----/Heading Section-->
-            <div class="cards">
-                <div class="container">
-                    <div id="courseCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col col-sm-12 col-md-4 col-lg-4">
-                                        <div class="card">
-                                            <img src="/images/course01.jpg" class="card-img-top" alt="image">
-                                            <div class="card-body">
-                                                <p>June 23 2025</p>
-                                                <h5 class="card-title">Next Js Crash Course</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <div class="p-courses-btn">
-                                                    <a href="#" class="btn btn-primary">Enroll Now</a>
-                                                    <p class="price">$ 500.00</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col col-sm-12 col-md-4 col-lg-4">
-                                        <div class="card">
-                                            <img src="/images/course02.jpg" class="card-img-top" alt="image">
-                                            <div class="card-body">
-                                                <p>June 23 2025</p>
-                                                <h5 class="card-title">Front End Crash Course</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <div class="p-courses-btn">
-                                                    <a href="#" class="btn btn-primary">Enroll Now</a>
-                                                    <p class="price">$ 500.00</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col col-sm-12 col-md-4 col-lg-4">
-                                        <div class="card">
-                                            <img src="/images/course03.jpg" class="card-img-top" alt="image">
-                                            <div class="card-body">
-                                                <p>June 23 2025</p>
-                                                <h5 class="card-title">UI/UX Crash Course</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <div class="p-courses-btn">
-                                                    <a href="#" class="btn btn-primary">Enroll Now</a>
-                                                    <p class="price">$ 500.00</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Add more cards within the same carousel-item as needed -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/images/course01.jpg" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <p>Jun 23 2025</p>
+                                <h5 class="card-title">NextJS Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                                    <p>$ 500.00</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="row">
-                                    <div class="col col-sm-12 col-md-4 col-lg-4">
-                                        <div class="card">
-                                            <img src="/images/course04.jpg" class="card-img-top" alt="image">
-                                            <div class="card-body">
-                                                <p>June 23 2025</p>
-                                                <h5 class="card-title">SEO Crash Course</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <div class="p-courses-btn">
-                                                    <a href="#" class="btn btn-primary">Enroll Now</a>
-                                                    <p class="price">$ 500.00</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col col-sm-12 col-md-4 col-lg-4">
-                                        <div class="card">
-                                            <img src="/images/course05.jpg" class="card-img-top" alt="image">
-                                            <div class="card-body">
-                                                <p>June 23 2025</p>
-                                                <h5 class="card-title">Python Crash Course</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <div class="p-courses-btn">
-                                                    <a href="#" class="btn btn-primary">Enroll Now</a>
-                                                    <p class="price">$ 500.00</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col col-sm-12 col-md-4 col-lg-4">
-                                        <div class="card">
-                                            <img src="/images/course06.jpg" class="card-img-top" alt="image">
-                                            <div class="card-body">
-                                                <p>June 23 2025</p>
-                                                <h5 class="card-title">AI Course</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up the bulk of the card's content.</p>
-                                                <div class="p-courses-btn">
-                                                    <a href="#" class="btn btn-primary">Enroll Now</a>
-                                                    <p class="price">$ 500.00</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Add more cards within the same carousel-item as needed -->
-                                </div>
-                            </div>
-                            <!-- Add more carousel-item elements for additional slides -->
                         </div>
-
-                        <!-- Controls -->
-                        <a class="carousel-control-prev" href="#courseCarousel" role="button" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#courseCarousel" role="button" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </a>
                     </div>
-
-
-
-
-                    <!-- <div class="row">
-                        <div class="col col-sm-12 col-md-4 col-lg-4">
-                            <div class="card">
-                                <img src="/images/course01.jpg" class="card-img-top" alt="image">
-                                <div class="card-body">
-                                  <p>June 23 2025</p>  
-                                  <h5 class="card-title">Next Js Crash Course</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <div class="p-courses-btn">
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/images/course01.jpg" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <p>Jun 23 2025</p>
+                                <h5 class="card-title">NextJS Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="d-flex justify-content-between">
                                     <a href="#" class="btn btn-primary">Enroll Now</a>
-                                    <p class="price">$ 500.00</p>
-                                  </div>
+                                    <p>$ 500.00</p>
                                 </div>
-                              </div>
+                            </div>
                         </div>
-                        <div class="col col-sm-12 col-md-4 col-lg-4">
-                            <div class="card">
-                                <img src="/images/course02.jpg" class="card-img-top" alt="image">
-                                <div class="card-body">
-                                  <p>June 23 2025</p>  
-                                  <h5 class="card-title">Front End Crash Course</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <div class="p-courses-btn">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/images/course01.jpg" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <p>Jun 23 2025</p>
+                                <h5 class="card-title">NextJS Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="d-flex justify-content-between">
                                     <a href="#" class="btn btn-primary">Enroll Now</a>
-                                    <p class="price">$ 500.00</p>
-                                  </div>
+                                    <p>$ 500.00</p>
                                 </div>
-                              </div>
+                            </div>
                         </div>
-                        <div class="col col-sm-12 col-md-4 col-lg-4">
-                            <div class="card">
-                                <img src="/images/course03.jpg" class="card-img-top" alt="image">
-                                <div class="card-body">
-                                  <p>June 23 2025</p>  
-                                  <h5 class="card-title">UI/UX Crash Course</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <div class="p-courses-btn">
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/images/course01.jpg" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <p>Jun 23 2025</p>
+                                <h5 class="card-title">NextJS Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="d-flex justify-content-between">
                                     <a href="#" class="btn btn-primary">Enroll Now</a>
-                                    <p class="price">$ 500.00</p>
-                                  </div>
+                                    <p>$ 500.00</p>
                                 </div>
-                              </div>
+                            </div>
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/images/course01.jpg" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <p>Jun 23 2025</p>
+                                <h5 class="card-title">NextJS Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                                    <p>$ 500.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/images/course01.jpg" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <p>Jun 23 2025</p>
+                                <h5 class="card-title">NextJS Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                                    <p>$ 500.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/images/course01.jpg" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <p>Jun 23 2025</p>
+                                <h5 class="card-title">NextJS Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                                    <p>$ 500.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/images/course01.jpg" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <p>Jun 23 2025</p>
+                                <h5 class="card-title">NextJS Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                                    <p>$ 500.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <img src="/images/course01.jpg" class="card-img-top" alt="image">
+                            <div class="card-body">
+                                <p>Jun 23 2025</p>
+                                <h5 class="card-title">NextJS Course</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-primary">Enroll Now</a>
+                                    <p>$ 500.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+                <div clas </div>
     </section>
     <!------/Popular courses section-->
 
@@ -464,8 +439,10 @@
                             <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    <strong>This is the fourth item's accordion body.</strong> It is shown by default, until the
-                                    collapse plugin adds the appropriate classes that we use to style each element. These
+                                    <strong>This is the fourth item's accordion body.</strong> It is shown by default,
+                                    until the
+                                    collapse plugin adds the appropriate classes that we use to style each element.
+                                    These
                                     classes control the overall appearance, as well as the showing and hiding via CSS
                                     transitions.
                                 </div>
@@ -486,11 +463,111 @@
             <h4 class="pink">Testimonials</h4>
             <h1>What Our Student Say</h1>
         </div>
-        <div class="content text-center">
-            <p class="text-center mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, deleniti? Omnis quos impedit beatae provident eum. Aperiam distinctio, accusamus accusantium fugit fuga blanditiis quaerat cum sint sed placeat eligendi maiores!</p>
+        <div class="swiper mySwipertestimonails swiper-testimonials">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide-testimonials">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title pink">lara</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <img src="/images/client1.jpg" class="card-img-top lara " alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-testimonials">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title pink">lara</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <img src="/images/client1.jpg" class="card-img-top lara " alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-testimonials">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title pink">lara</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <img src="/images/client1.jpg" class="card-img-top lara " alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-testimonials">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title pink">lara</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <img src="/images/client1.jpg" class="card-img-top lara " alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-testimonials">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title pink">lara</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <img src="/images/client1.jpg" class="card-img-top lara " alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-testimonials">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title pink">lara</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <img src="/images/client1.jpg" class="card-img-top lara " alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-testimonials">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title pink">lara</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <img src="/images/client1.jpg" class="card-img-top lara " alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-testimonials">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title pink">lara</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <img src="/images/client1.jpg" class="card-img-top lara " alt="image">
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-testimonials">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title pink">lara</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                        <img src="/images/client1.jpg" class="card-img-top lara " alt="image">
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="container">
+
+        </div>
+        <!-- <div class="content text-center">
+            <p class="text-center mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, deleniti? Omnis
+                quos impedit beatae provident eum. Aperiam distinctio, accusamus accusantium fugit fuga blanditiis
+                quaerat cum sint sed placeat eligendi maiores!</p>
             <h4 class="pink mb-5">Lara</h4>
             <img src="/images/client1.jpg" alt="image" class="lara">
-        </div>
+        </div> -->
     </section>
     <!-----/testimonials section-->
 
@@ -516,29 +593,37 @@
                             <div class="col col-sm-6 col-md-3 col-lg-3">
                                 <ul class="nav flex-column">
                                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Abut</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Courses</a></li>
-                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact</a></li>
-                                  </ul>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Courses</a>
+                                    </li>
+                                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact</a>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="col col-sm-6 col-md-3 col-lg-3">
                                 <ul class="list-unstyled d-flex">
                                     <li class="ms-3">
                                         <a class="text-white" href="#">
-                                            <svg class="bi" width="24" height="24" fill="white"><use xlink:href="#twitter"/></svg>
+                                            <svg class="bi" width="24" height="24" fill="white">
+                                                <use xlink:href="#twitter" />
+                                            </svg>
                                         </a>
                                     </li>
                                     <li class="ms-3">
                                         <a class="text-white" href="#">
-                                            <svg class="bi" width="24" height="24" fill="white"><use xlink:href="#instagram"/></svg>
+                                            <svg class="bi" width="24" height="24" fill="white">
+                                                <use xlink:href="#instagram" />
+                                            </svg>
                                         </a>
                                     </li>
                                     <li class="ms-3">
                                         <a class="text-white" href="#">
-                                            <svg class="bi" width="24" height="24" fill="white"><use xlink:href="#facebook"/></svg>
+                                            <svg class="bi" width="24" height="24" fill="white">
+                                                <use xlink:href="#facebook" />
+                                            </svg>
                                         </a>
                                     </li>
                                 </ul>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -548,10 +633,16 @@
     </section>
     <!----/footer section-->
 
+
+
+
+    <!------Bootstrap js link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
+    <!----Swipper js link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-----Custom js-->
     <script src="app.js"></script>
 </body>
 
