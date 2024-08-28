@@ -86,11 +86,42 @@ header> nav{
     top: 50%;
     opacity: 1;
   } */
-    
 
+.freq-asked-questions .heading h4{
+    color: #f2277e;
+    margin-bottom: 10px;
+}
 
+.freq-asked-questions .heading h1{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
 
+.accordion-item{
+    background-color: var(--secondary-color) !important;
+    color: #fff;
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+}
 
+.accordion-button{
+    background-color: var(--secondary-color);
+    color: #fff;
+    border: none;
+}
+.testimonials h1{
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.lara{
+    border-radius: 100%;
+    border: 2px solid #fff;
+    width: 150px;
+}
+.bi {
+    fill: white;
+}
 
 
 
@@ -147,11 +178,9 @@ header> nav{
 
 
 
-
-
-
-
-
+.pink{
+    color: var(--marker-color);
+}
 
 
 .pad-top{
