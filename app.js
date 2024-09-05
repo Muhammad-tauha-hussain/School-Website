@@ -1,3 +1,5 @@
+// import { auth,createUserWithEmailAndPassword } from "./firebase";
+
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
@@ -28,3 +30,6 @@ var swiper = new Swiper(".mySwiper", {
     lazy: true, // Enable lazy loading
   });
   
+
+
+
